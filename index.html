@@ -1,1 +1,57 @@
-Html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TopUp Game & Dana Murah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>TopUp Murah & Cepat</h1>
+    <p>Game • Dana • OVO • Pulsa</p>
+  </header>
+
+  <div class="container">
+    <h2>Kategori Layanan</h2>
+    <div class="tab-buttons">
+      <button onclick="filterItems('all')" class="active">Semua</button>
+      <button onclick="filterItems('game')">Game</button>
+      <button onclick="filterItems('ewallet')">Top Up eWallet</button>
+    </div>
+
+    <div class="game-grid">
+      <!-- Game -->
+      <a href="mlbb/" class="game-card game">
+        <img src="assets/img/mlbb-logo.png" alt="Mobile Legends" />
+        <h3>Mobile Legends</h3>
+      </a>
+      <a href="8ballpool/" class="game-card game">
+        <img src="assets/img/8bp-logo.png" alt="8 Ball Pool" />
+        <h3>8 Ball Pool</h3>
+      </a>
+
+      <!-- E-Wallet -->
+      <a href="#" class="game-card ewallet">
+        <img src="assets/img/dana-logo.png" alt="Dana" />
+        <h3>Top Up Dana</h3>
+      </a>
+      <a href="#" class="game-card ewallet">
+        <img src="assets/img/ovo-logo.png" alt="OVO" />
+        <h3>Top Up OVO</h3>
+      </a>
+      <a href="#" class="game-card ewallet">
+        <img src="assets/img/gopay-logo.png" alt="GoPay" />
+        <h3>Top Up GoPay</h3>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TopUpStore. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
