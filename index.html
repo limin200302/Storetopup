@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TopUp Game & Dana Murah</title>
+  <title>Ucup Mamet Store - TopUp Murah</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Ucup Mamet Store</h1>
-    <p>Menyediakan top up vilog dan beberapa item lainnya</p>
+    <p>Menyediakan top up game, e-wallet, convert pulsa, dan lainnya</p>
   </header>
 
   <div class="container">
@@ -19,6 +19,7 @@
       <button onclick="filterItems('all')" class="active">Semua</button>
       <button onclick="filterItems('game')">Game</button>
       <button onclick="filterItems('ewallet')">Top Up eWallet</button>
+      <button onclick="filterItems('pulsa')">Convert Pulsa</button>
     </div>
 
     <div class="game-grid">
@@ -49,11 +50,21 @@
         <img src="assets/img/spay-logo.png" alt="Shopeepay" />
         <h3>Top Up Shopeepay</h3>
       </a>
+
+      <!-- Convert Pulsa -->
+      <a href="#" class="game-card pulsa">
+        <img src="assets/img/axis-logo.png" alt="Axis Pulsa" />
+        <h3>Convert Pulsa Axis</h3>
+      </a>
+      <a href="#" class="game-card pulsa">
+        <img src="assets/img/im3-logo.png" alt="Indosat Pulsa" />
+        <h3>Convert Pulsa Indosat</h3>
+      </a>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 TopUpStore. All rights reserved.
+    &copy; 2025 Ucup Mamet Store. All rights reserved.
   </footer>
 
   <script src="script.js"></script>
