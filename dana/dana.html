@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up Dana - Ucup Mamet Store</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="dana.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Top Up Dana</h1>
+    <p>Silakan isi formulir untuk melakukan top up saldo Dana</p>
+  </header>
+
+  <div class="container">
+    <div class="form-container">
+      <form id="danaForm">
+        <label for="nomor">Nomor Dana</label>
+        <input type="tel" id="nomor" placeholder="08xxxxxxxxxx" required />
+
+        <label for="nominal">Nominal</label>
+        <select id="nominal" required>
+          <option value="">-- Pilih Nominal --</option>
+          <option value="10000">Rp 10.000</option>
+          <option value="20000">Rp 20.000</option>
+          <option value="50000">Rp 50.000</option>
+          <option value="100000">Rp 100.000</option>
+        </select>
+
+        <button type="submit">Kirim via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Ucup Mamet Store. All rights reserved.
+  </footer>
+
+  <script src="dana.js"></script>
+</body>
+</html>
