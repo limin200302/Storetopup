@@ -47,13 +47,11 @@ header p {
 .tab-buttons {
   display: flex;
   overflow-x: auto;
-  padding: 10px 0;
-  justify-content: center;
+  padding: 10px 20px; /* 🛠️ tambahkan padding kiri & kanan */
   gap: 10px;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .tab-buttons::-webkit-scrollbar {
   display: none;
 }
