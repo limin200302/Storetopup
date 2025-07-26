@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Global Styles */
-* {
-  box-sizing: border-box;
-}
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -13,9 +10,6 @@ body {
   background: linear-gradient(160deg, #0d0d2b, #1a1a40);
 }
 
-.hidden {
-  display: none !important;
-}
 /* Header */
 header {
   background: rgba(13, 71, 161, 0.85);
@@ -111,30 +105,21 @@ header p {
   overflow: hidden;
   text-decoration: none;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   text-align: center;
 }
 
-/* Hover efek */
 .game-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-.game-card img:not(.logo-img) {
-  display: none;
-}
-/* Logo Gaya GoPay */
-.logo-img {
-  width: 80%;
-  height: 120px;
+/* Logo Game */
+.game-card img {
+  width: 100%;
+  max-height: 140px;
   object-fit: contain;
-  padding: 20px;
+  padding: 15px;
   background: #121225;
-  border-radius: 20px;
   display: block;
   margin: 0 auto;
 }
