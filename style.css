@@ -147,3 +147,59 @@ footer {
   background: #0f0f1d;
   margin-top: 50px;
 }
+/* Navbar Hamburger */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #0d47a1;
+  padding: 15px 20px;
+}
+
+.nav-brand {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hidden menu */
+.nav-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #1e1e2f;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  list-style: none;
+  padding: 10px 0;
+  width: 180px;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+}
+
+.nav-menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-menu li:last-child {
+  border-bottom: none;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.nav-menu a:hover {
+  background: #2196f3;
+}
+
+/* Tampilkan menu jika tidak hidden */
+.nav-menu.show {
+  display: flex;
+}
