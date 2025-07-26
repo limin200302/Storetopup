@@ -10,7 +10,9 @@ body {
   box-sizing: border-box;
   background: linear-gradient(160deg, #0d0d2b, #1a1a40);
 }
-
+.hidden {
+  display: none !important;
+}
 /* Header */
 header {
   background: rgba(13, 71, 161, 0.85);
