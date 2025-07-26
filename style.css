@@ -35,20 +35,23 @@ header p {
 .container {
   padding: 30px 20px;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Tab Buttons (Geser Horizontal) */
 .tab-buttons {
   display: flex;
   overflow-x: auto;
   padding: 10px 0;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .tab-buttons::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 .tab-buttons button {
@@ -70,13 +73,16 @@ header p {
   color: #fff;
   transform: scale(1.05);
 }
+
 /* Game Grid */
 .game-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 20px;
   margin-top: 30px;
+  padding: 0 10px;
 }
 
 /* Game Card */
@@ -84,11 +90,14 @@ header p {
   background: #1e1e2f;
   border-radius: 12px;
   width: 180px;
+  max-width: 90%;
+  margin: 0 auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   overflow: hidden;
   text-decoration: none;
   color: #fff;
+  text-align: center;
 }
 
 .game-card:hover {
@@ -96,19 +105,22 @@ header p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
+/* Logo Game */
 .game-card img {
   width: 100%;
-  height: 140px;
+  max-height: 140px;
   object-fit: contain;
   padding: 15px;
   background: #121225;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Nama Game */
 .game-card h3 {
   margin: 12px 0;
   padding: 0 10px;
   font-size: 16px;
-  text-align: center;
 }
 
 /* Footer */
