@@ -8,27 +8,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navbar / Hamburger -->
   <nav class="navbar">
-  <div class="nav-brand">☰</div>
-  <ul class="nav-menu hidden">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Riwayat Transaksi</a></li>
-    <li><a href="#">Pusat Bantuan</a></li>
-    <li><a href="#">Tentang</a></li>
-  </ul>
+    <div class="nav-brand" id="hamburger">☰</div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Riwayat Transaksi</a></li>
+      <li><a href="#">Pusat Bantuan</a></li>
+      <li><a href="#">Tentang</a></li>
+    </ul>
   </nav>
+
+  <!-- Header -->
   <header>
     <h1>Ucup Mamet Store</h1>
     <p>Menyediakan top up game, e-wallet, convert pulsa, dan lainnya</p>
   </header>
 
+  <!-- Konten Utama -->
   <div class="container">
     <h2>Kategori Layanan</h2>
     <div class="tab-buttons">
-      <button onclick="filterItems('all')" class="active">Semua</button>
-      <button onclick="filterItems('game')">Game</button>
-      <button onclick="filterItems('ewallet')">Top Up eWallet</button>
-      <button onclick="filterItems('pulsa')">Convert Pulsa</button>
+      <button onclick="filterItems('all', event)" class="active">Semua</button>
+      <button onclick="filterItems('game', event)">Game</button>
+      <button onclick="filterItems('ewallet', event)">Top Up eWallet</button>
+      <button onclick="filterItems('pulsa', event)">Convert Pulsa</button>
     </div>
 
     <div class="grid-wrapper">
