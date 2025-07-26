@@ -12,6 +12,10 @@ body {
   color: #fff;
   background: linear-gradient(160deg, #0d0d2b, #1a1a40);
 }
+
+.hidden {
+  display: none !important;
+}
 /* Header */
 header {
   background: rgba(13, 71, 161, 0.85);
@@ -120,11 +124,9 @@ header p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Hapus img default */
-.game-card img {
+.game-card img:not(.logo-img) {
   display: none;
 }
-
 /* Logo Gaya GoPay */
 .logo-img {
   width: 80%;
@@ -152,14 +154,4 @@ footer {
   color: #999;
   background: #0f0f1d;
   margin-top: 50px;
-}
-.logo-img {
-  width: 80%;
-  height: 120px;
-  object-fit: contain;
-  padding: 20px;
-  background: #121225;
-  border-radius: 20px;
-  display: block;
-  margin: 0 auto;
 }
