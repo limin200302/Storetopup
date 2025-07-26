@@ -4,24 +4,20 @@ function filterItems(category) {
 
   // Reset tombol aktif
   buttons.forEach(btn => btn.classList.remove("active"));
-
-  // Aktifkan tombol yang diklik
   event.target.classList.add("active");
 
-  // Tampilkan atau sembunyikan kartu sesuai kategori
+  // Tampilkan kartu berdasarkan kategori
   cards.forEach(card => {
     if (category === "all") {
-      card.style.display = "block";
+      card.classList.remove("hidden");
     } else {
-      card.style.display = card.classList.contains(category) ? "block" : "none";
+      if (card.classList.contains(category)) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
     }
   });
-
-  // ✅ Paksa browser reflow biar layout Flexbox tetap center
-  const grid = document.querySelector(".game-grid");
-  grid.style.display = "none";
-  void grid.offsetHeight; // Hack untuk force reflow
-  grid.style.display = "flex";
 }
 
-console.log("TopUp Website siap, Ketua!");
+console.log("TopUp Website anti-miring aktif, Ketua!");
