@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
+  box-sizing: border-box;
   background: linear-gradient(160deg, #0d0d2b, #1a1a40);
 }
 
@@ -105,6 +106,10 @@ header p {
   overflow: hidden;
   text-decoration: none;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 🔥 ini yang nge-fix posisi ke tengah */
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -116,12 +121,11 @@ header p {
 /* Logo Game */
 .game-card img {
   width: 100%;
-  max-height: 140px;
+  height: 140px;
   object-fit: contain;
   padding: 15px;
   background: #121225;
   display: block;
-  margin: 0 auto;
 }
 
 /* Nama Game */
